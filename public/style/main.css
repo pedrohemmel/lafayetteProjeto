@@ -1,0 +1,31 @@
+.card{
+    box-shadow: unset;
+    border-radius: unset;
+}
+
+
+.card-image{
+    background-color: antiquewhite;
+}
+
+.navbar-b{
+    justify-content: center;
+}
+.textaaa{
+    background-color: aqua;
+    
+}
+.login-b{
+    width: 100%;
+}
+.login-t{
+    text-align: center;
+}
+.hasbackground{
+    background-image: url("/src/views/images/other.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 1000px;
+    background-color: aqua;
+}
