@@ -16,4 +16,4 @@ server.use((req,res)=>{
     res.render('pages/404');
 })
 
-server.listen(3000);
+server.listen(80);
