@@ -1,0 +1,49 @@
+html, body, .dashboard{
+    height: 100%;
+    background-color: #f9f9f9;
+}
+.butone{
+    width: 100%;
+}
+.titlen{
+    text-align: center;
+}
+.navl{
+    justify-content: center;
+    height: 100px;
+}
+.is-mediuma{
+    width: 45%;
+    margin: auto;
+}
+.dash{
+    height: 100%;
+    background-color:#00203D;
+}
+.selection{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: flex-end;
+
+}
+.selection .control{
+    margin-left: 10px;
+}
+.teamSearch{
+    display: flex;
+}
+.teamList{
+    align-items: center;
+
+}
+.teamControl{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+.btt{
+justify-content: right;
+text-align: right;
+}
