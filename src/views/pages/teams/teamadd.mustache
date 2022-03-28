@@ -1,4 +1,4 @@
-{{>partials/beggin}}
+{{>partials/begginin}}
 
   <section class="columns dashboard">
     <div class="column is-one-quarter dashboard">
@@ -15,7 +15,7 @@
      
          <ul class="menu-list">
      
-           <li><a href="team" class="is-active">
+           <li><a href="/team" class="is-active">
 
             <span class="icon-text">
               <span class="icon">
@@ -27,7 +27,7 @@
            </a>
            </li>
      
-           <li><a href="galery"><span class="icon-text">
+           <li><a href="/galery"><span class="icon-text">
             <span class="icon">
               <i class="fas fa-camera-retro"></i>
             </span>
@@ -35,7 +35,7 @@
           </span></a>
            </li>
      
-           <li><a href="portal"><span class="icon-text">
+           <li><a href="/portal"><span class="icon-text">
             <span class="icon">
               <i class="fas fa-rss-square"></i>
             </span>
@@ -61,7 +61,7 @@
 
         <div class="columns">
           <div class="column">
-            <p class="title">Painel de Controle</p>
+            <p class="title">Funcionários</p>
             <p class="subtitle is-6">6 Resultados encontrados</p>
           </div>
           <div class="column is-one-quarter teamSearch">
@@ -90,53 +90,66 @@
 
 
       <div class="box block">
-        
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile">
-              <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
-                  <p class="title">Vertical...</p>
-                  <p class="subtitle">Top tile</p>
-                </article>
-                <article class="tile is-child notification is-warning">
-                  <p class="title">...tiles</p>
-                  <p class="subtitle">Bottom tile</p>
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-info">
-                  <p class="title">Middle tile</p>
-                  <p class="subtitle">With an image</p>
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/640x480.png">
-                  </figure>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-danger">
-                <p class="title">Wide tile</p>
-                <p class="subtitle">Aligned with the right tile</p>
-                <div class="content">
-                  <!-- Content -->
-                </div>
-              </article>
-            </div>
+
+        <form class="teamForm" method="get" action="#">
+
+          <div class="field">
+            <figure class="image is-128x128 teamfigure ">
+              <img class="is-rounded is-light" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
-              <div class="content">
-                <p class="title">Tall tile</p>
-                <p class="subtitle">With even more content</p>
-                <div class="content">
-                  <!-- Content -->
-                </div>
-              </div>
-            </article>
+
+        <div class="field">
+          <label class="label" for="taname">Name</label>
+          <div class="control">
+            <input id="taname" class="input" type="text" placeholder="e.g Alex Smith">
           </div>
         </div>
+        
+        <div class="field">
+          <label class="label" for="taemail">Email</label>
+          <div class="control">
+            <input id="taemail" class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="tapass">Senha</label>
+          <p class="control has-icons-left">
+            <input id="tapass" class="input" type="password" placeholder="Password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="tapassr">Repita a senha</label>
+          <p class="control has-icons-left">
+            <input id="tapassr" class="input" type="password" placeholder="Repeat password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field is-grouped is-justify-content-right btt ">
+          <p class="control">
+            <a href="../team" class="button is-light">
+              Cancel
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary">
+              Salvar
+            </a>
+          </p>
+        </div>
+      </form>
+
     </div>
+
+   
 
     </div>
   </section>

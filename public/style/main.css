@@ -1,6 +1,15 @@
-html, body, .dashboard{
-    height: 100%;
+html, body{
+    width: 100%; height: 100%;
     background-color: #f9f9f9;
+
+}
+.dashboard{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.dash{
+    padding: 50px;
 }
 .butone{
     width: 100%;
@@ -35,7 +44,7 @@ html, body, .dashboard{
 }
 .teamList{
     align-items: center;
-
+    border-bottom: 1px solid lightgray;
 }
 .teamControl{
     display: flex;
@@ -43,7 +52,28 @@ html, body, .dashboard{
     justify-content: right;
     align-items: center;
 }
+
 .btt{
-justify-content: right;
-text-align: right;
+    justify-content: right;
+    text-align: right;
+}
+
+
+.menu-list a{
+    color: #f9f9f9;
+}
+.menu-list li{
+    background-color:#00203D;
+}
+
+.roll{
+    overflow: auto;
+}
+
+.teamForm{
+    width: 50%;
+    margin: 50px auto;
+}
+.teamfigure{
+    margin: auto;
 }

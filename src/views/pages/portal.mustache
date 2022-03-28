@@ -1,47 +1,67 @@
 {{>partials/beggin}}
 
-  <section class="columns section dashboard">
-    <aside class="column is-one-quarter dash">
+  <section class="columns dashboard">
+    <div class="column is-one-quarter dashboard">
+      <aside class="dash">
 
-      <p class="menu-label">
-        <a href="inicial">Dashboard</a>
-       </p>
-   
-       <ul class="menu-list">
-   
-         <li><a href="team" class="is-active">Funcionários</a>
-           <ul class="menu-list">
-             <li><a>Adicionar</a></li>
-             <li><a>Lista</a></li>
-             <li><a>Portal</a></li>
-           </ul>
-         </li>
-   
-         <li><a href="galery">Galeria</a>
-           <ul class="menu-list">
-             <li><a>Adicionar</a></li>
-             <li><a>Lista</a></li>
-             <li><a>Portal</a></li>
-           </ul>
-         </li>
-   
-         <li><a href="portal">Portal</a>
-           <ul class="menu-list">
-             <li><a>Adicionar</a></li>
-             <li><a>Lista</a></li>
-             <li><a>Portal</a></li>
-           </ul>
-         </li>
+        <p class="menu-label">
+          <a href="inicial"><span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Configurações</span>
+          </span></a>
+         </p>
+     
+         <ul class="menu-list">
+     
+           <li><a href="team">
+
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-briefcase"></i>
+              </span>
+              <span>Funcionários</span>
+            </span>
+
+           </a>
+           </li>
+     
+           <li><a href="galery"><span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </span>
+            <span>Galeria</span>
+          </span></a>
+           </li>
+     
+           <li><a href="portal" class="is-active"><span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-rss-square"></i>
+            </span>
+            <span>Portal</span>
+          </span></a>
+           </li>
+           
+         </ul>
          
-       </ul>
-       
-    </aside>
-    <div class="column">
-      
-   
+      </aside>
+    </div>
+
+    <div class="column roll">
+
+      <div class="box columns">
+        <div class="column "></div>
+        <div class="column is-1">
+          <figure class="image is-48x48">
+            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+          </figure>        
+        </div>
+      </div>
+
         <div class="columns">
           <div class="column">
-            <p class="title">Funcionários</p>
+            <p class="title">Portal</p>
             <p class="subtitle is-6">6 Resultados encontrados</p>
           </div>
           <div class="column is-one-quarter teamSearch">
@@ -58,42 +78,28 @@
                   </select>
                 </div>
               </div>
-              <div class="control ">
-                <button class="button is-primary is-small">Submit</button>
+              <div class="control">
+                <button class="button is-link is-small">Buscar</button>
               </div>
             </form>
           </div>
             
         </div>
-        <div class="card">
-          <div class="card-content">
-              <ul class="content ">
-                <li class="columns teamList">
-                  <div class="column teste">
-                    <figure class="image is-48x48">
-                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                  </figure></div>
-                  <div class="column"><a>Nome</a></div>
-                  <div class="column"><a>Email</a></div>
-                  <div class="field is-grouped column">
-                    <p class="control">
-                      <a class="button is-primary is-light">
-                        Editar
-                      </a>
-                    </p>
-                    <p class="control">
-                      <a class="button is-danger is-light">
-                        Deletar
-                      </a>
-                    </p>
-                </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        
-    </div>
-  </div>
-  </section>
 
+
+
+
+      <div class="box block">
+        
+
+    </div>
+    <div class="is-justify-content-right btt">
+      <p class="control">
+        <a href="teamadd" class="button is-link">
+          Adicionar
+        </a>
+      </p>
+    </div>
+    </div>
+  </section>
 {{>partials/end}}
