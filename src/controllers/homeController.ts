@@ -1,8 +1,19 @@
 import {Request, Response} from 'express'
+import { sequelize } from '../instances/mysql'
 
-export const inicial = (req:Request, res: Response) =>{
 
-    res.render("pages/inicial")
+export const inicial = async (req:Request, res: Response) =>{
+    try{
+        await sequelize.authenticate()
+        console.log("Conexão estabelecida!")
+        res.render("pages/inicial")
+
+    }catch(error){
+        console.log("falha na conexão ",error)
+        res.redirect("login")
+
+    }
+
 }
 
 export const teams = (req:Request, res: Response) =>{

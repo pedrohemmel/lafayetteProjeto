@@ -17,4 +17,4 @@ server.use((req:Request,res:Response)=>{
     res.status(404).send("Página não encontrada")
 })
 
-server.listen(80);
+server.listen(3000);
