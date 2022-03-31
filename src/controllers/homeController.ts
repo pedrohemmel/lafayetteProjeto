@@ -3,16 +3,33 @@ import { sequelize } from '../instances/mysql'
 
 
 export const inicial = async (req:Request, res: Response) =>{
-    try{
+   
+    res.render("pages/")
+
+   /* try{
         await sequelize.authenticate()
         console.log("Conexão estabelecida!")
-        res.render("pages/inicial")
 
     }catch(error){
         console.log("falha na conexão ",error)
         res.redirect("login")
 
-    }
+    } */
+
+}
+export const home = async (req:Request, res: Response) =>{
+   
+    res.render("pages/home")
+
+   /* try{
+        await sequelize.authenticate()
+        console.log("Conexão estabelecida!")
+
+    }catch(error){
+        console.log("falha na conexão ",error)
+        res.redirect("login")
+
+    } */
 
 }
 

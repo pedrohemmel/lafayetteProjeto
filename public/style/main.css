@@ -1,79 +1,24 @@
 html, body{
     width: 100%; height: 100%;
-    background-color: #f9f9f9;
-
 }
 .dashboard{
     height: 100%;
-    padding: 0;
-    margin: 0;
+    margin: 0; padding: 0;
 }
-.dash{
-    padding: 50px;
-}
-.butone{
-    width: 100%;
-}
-.titlen{
-    text-align: center;
-}
-.navl{
+.navbar-brand{
     justify-content: center;
-    height: 100px;
+    margin: 0;
+    padding: 0;
 }
-.is-mediuma{
-    width: 45%;
-    margin: auto;
-}
-.dash{
+.menu{
     height: 100%;
-    background-color:#00203D;
+    box-shadow: 0 0 1px 0px gray;
 }
-.selection{
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    align-items: flex-end;
-
-}
-.selection .control{
-    margin-left: 10px;
-}
-.teamSearch{
-    display: flex;
-}
-.teamList{
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-}
-.teamControl{
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    align-items: center;
+.menu-list, .menu-label, .menu ul li a{
 }
 
-.btt{
-    justify-content: right;
-    text-align: right;
+.menu ul li a:hover{
 }
+.menu ul li .is-active:hover{
 
-
-.menu-list a{
-    color: #f9f9f9;
-}
-.menu-list li{
-    background-color:#00203D;
-}
-
-.roll{
-    overflow: auto;
-}
-
-.teamForm{
-    width: 50%;
-    margin: 50px auto;
-}
-.teamfigure{
-    margin: auto;
 }
