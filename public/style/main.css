@@ -3,6 +3,13 @@
     border-radius: unset;
 }
 
+.historyHero{
+    background-image:url("../img/projetoAprenderSonhar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+
+}
 
 .card-image{
     background-color: antiquewhite;
@@ -35,8 +42,30 @@
 }
 
 .img1{
-    background-image: url('transferir.jpg');
     background-color: aqua;
 }
 
+.buttons .is-active{
+    color: white
+}
 
+.title_a, .history .is-medium{
+    text-align: center;
+}
+
+.history{
+    background-color: black;
+}
+
+
+.journey{
+    background: rgb(255,155,38);
+    background: -moz-linear-gradient(90deg, rgba(255,155,38,1) 0%, rgba(250,135,0,1) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,155,38,1) 0%, rgba(250,135,0,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,155,38,1) 0%, rgba(250,135,0,1) 100%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9b26",endColorstr="#00d4ff",GradientType=1);
+    padding: 20px;
+}
+.journey h1, .journey h2{
+    color: white;
+}

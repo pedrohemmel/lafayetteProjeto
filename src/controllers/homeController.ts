@@ -1,24 +1,41 @@
 import {Request, Response} from 'express'
-import { sequelize } from '../instances/mysql'
-
-export const home = async (req:Request, res: Response) =>{
-    try{
-        await sequelize.authenticate()
-        console.log("Conexão estabelecida!")
-    }catch(error){
-        console.log("Falha na conexão ", error)
-    }
+import { json } from 'node:stream/consumers'
+import { Func } from '../models/func'
+import { Art } from '../models/artigo'
 
 
-    res.render("pages/home",{
+export const home = (req:Request, res: Response) =>{
+
+    res.render("pages/home"
+
+    )
+
+
+}
+
+export const blog = async (req:Request, res: Response) =>{
+    let artigo = await Art.findAll()
+
+    console.log("ARTIGOS: ", JSON.stringify(artigo))
+
+    res.render("pages/blog",{
+        artigo
 
     })
 }
 
-export const slug = ((req:Request, res:Response) => {
+export const slug = async (req:Request, res:Response) => {
 
+    let func = await Func.findAll()
+    let artigo = await Art.findAll()
+    
     let slug:string = req.params.slug
 
-    res.render(`pages/${slug}`)
+    res.render(`pages/${slug}`,{
 
-})
+        func,
+        artigo
+    })
+    
+}
+
