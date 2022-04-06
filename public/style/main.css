@@ -5,6 +5,9 @@ html, body{
     height: 100%;
     margin: 0; padding: 0;
 }
+a{
+    color: #2175bf
+}
 .navbar-brand{
     justify-content: center;
     margin: 0;
@@ -12,13 +15,46 @@ html, body{
 }
 .menu{
     height: 100%;
-    box-shadow: 0 0 1px 0px gray;
+    box-shadow: 0 0 1px 0px #2175bf;
+    padding: 20px;
 }
-.menu-list, .menu-label, .menu ul li a{
+.logo{
+    width: 50%;
+    margin: auto;
+}
+.teamList{
+    align-items: center;
+}
+.searchForm{
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+    align-items: flex-end;
+    height: 100%;
+}
+.selection .control{
+    margin-left: 5px;
 }
 
-.menu ul li a:hover{
+.scroll{
+    overflow:auto;
 }
-.menu ul li .is-active:hover{
+.card-header{
+    box-shadow: 0px 0px 1px #2175bf;
 
+}
+.card{
+    box-shadow: 0px 0px 0px #2175bf;
+    margin: 5px;
+}
+.all{
+    width: 30%;
+    margin:auto;
+    text-align: center;
+}
+.login{
+    margin-top: 20px;
+}
+.butone{
+    width: 100%;
 }

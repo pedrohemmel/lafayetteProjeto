@@ -1,159 +1,101 @@
 {{>partials/beggin}}
 
-  <section class="columns dashboard">
-    <div class="column is-one-quarter dashboard">
-      <aside class="dash">
+    <div class="columns dashboard">
+        <aside class="column is-one-fifth menu">
 
-        <p class="menu-label">
-          <a href="/"><span class="icon-text">
-            <span class="icon">
-              <i class="fas fa-home"></i>
-            </span>
-            <span>Configurações</span>
-          </span></a>
-         </p>
-     
-         <ul class="menu-list">
-     
-           <li><a href="team" class="is-active">
-
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fas fa-briefcase"></i>
-              </span>
-              <span>Funcionários</span>
-            </span>
-
-           </a>
-           </li>
-     
-           <li><a href="galery"><span class="icon-text">
-            <span class="icon">
-              <i class="fas fa-camera-retro"></i>
-            </span>
-            <span>Galeria</span>
-          </span></a>
-           </li>
-     
-           <li><a href="portal"><span class="icon-text">
-            <span class="icon">
-              <i class="fas fa-rss-square"></i>
-            </span>
-            <span>Portal</span>
-          </span></a>
-           </li>
-           
-         </ul>
-         
-      </aside>
-    </div>
-
-    <div class="column roll">
-
-      <div class="box columns">
-        <div class="column "></div>
-        <div class="column is-1">
-          <figure class="image is-48x48">
-            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-          </figure>        
-        </div>
-      </div>
-
-        
-
-
-
-
-      <div class="box block section roll">
-        <div class="columns">
-          <div class="column">
-            <p class="title">Funcionários</p>
-            <p class="subtitle is-6">6 Resultados encontrados</p>
-          </div>
-          <div class="column is-one-quarter teamSearch">
-            <form action="#" method="get" class="selection">
-              <div class="control">
-                <div class="select is-small">
-                  <select>
-                    <option value="Teste" disabled selected>Filtros</option>
-                    <option>With options</option>
-                    <option>With options</option>
-                    <option>With options</option>
-                    <option>With options</option>
-
-                  </select>
-                </div>
-              </div>
-              <div class="control">
-                <button class="button is-link is-small">Buscar</button>
-              </div>
-            </form>
-          </div>
+            <div class="navbar-brand logo">
+                <a class="menu-label" href="/">
+                  <img src="/img/logo.jpg" alt="Painel de Controle">
+                </a>
             
+            </div>
+
+            <p class="menu-label">
+                Painel de Controle
+            </p>
+            <ul class="menu-list">
+              <li><a href="team" class="is-active">
+                <span class="icon">
+                    <i class="fas fa-address-card"></i>
+                  </span>
+                  Colaboradores</a></li>
+              <li><a href="galery">
+                <span class="icon">
+                    <i class="fas fa-image"></i>
+                  </span>
+                  Galeria</a></li>
+              <li><a href="portal">
+                <span class="icon">
+                    <i class="fas fa-rss"></i>
+                  </span>
+                  Portal</a></li>
+            </ul>
+                
+        </aside>
+
+        <div class="column dash-content">
+          {{>partials/navdash}}
+
+
+
+              <div class="section is-small">
+
+                <div class="columns">
+                  <div class="column">
+                    <p class="title">Funcionários</p>
+                    <p class="subtitle is-6">6 Resultados encontrados</p>
+                  </div>
+                  <div class="column is-one-quarter">
+                    <form action="#" method="get" class="selection searchForm">
+                      <div class="control">
+                        <div class="select is-small">
+                          <select>
+                            <option value="Teste" disabled selected>Filtros</option>
+        
+                          </select>
+                        </div>
+                      </div>
+                      <div class="control">
+                        <button class="button is-link is-small">Buscar</button>
+                      </div>
+                    </form>
+                  </div>
         </div>
-        <ul class="box">
-          <li class="columns teamList">
-            <div class="column is-2">
-              <figure class="image is-48x48">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-              </figure>                  
-            </div>
-            <div class="column is-3"><a>Nome do funcionário</a></div>
-            <div class="column"><a>nomefunc@email.com.br</a></div>
+        
+        <div class="box scroll scroll">
+          <ul>
+          {{#func}}
+                  <li class="columns teamList">
+                    <div class="column is-2">
+                      <figure class="image is-48x48">
+                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                      </figure>                  
+                    </div>
+                    <div class="column is-3"><a>{{nome_func}}</a></div>
+                    <div class="column"><a>{{email_func}}</a></div>
+        
+                    <div class="field is-grouped column is-3 is-justify-content-space-evenly	">
+                      <a href="teams/teamedit">
+                      <button class="button is-link">
+                        <span>Editar</span>
+        
+                      </button></a>
+        
+                      <button class="button is-danger is-outlined">
+                        <span>Delete</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-times"></i>
+                        </span>
+                      </button>
+                      
+                  </div>
+                  </li>
+            {{/func}}
+          </ul>
+        </div>
+              </div>
 
-            <div class="field is-grouped column is-3 is-justify-content-space-evenly	">
-              <a href="teams/teamedit">
-              <button class="button is-link">
-                <span>Editar</span>
-
-              </button></a>
-
-              <button class="button is-danger is-outlined">
-                <span>Delete</span>
-                <span class="icon is-small">
-                  <i class="fas fa-times"></i>
-                </span>
-              </button>
-              
-          </div>
-          </li>
-          <li class="columns teamList">
-            <div class="column is-2">
-              <figure class="image is-48x48">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-              </figure>                  
-            </div>
-            <div class="column is-3"><a>Nome do funcionário</a></div>
-            <div class="column"><a>nomefunc@email.com.br</a></div>
-
-            <div class="field is-grouped column is-3 is-justify-content-space-evenly	">
-              <a href="teams/teamedit">
-
-              <button class="button is-link">
-                <span>Editar</span>
-
-              </button></a>
-
-              <button class="button is-danger is-outlined">
-                <span>Delete</span>
-                <span class="icon is-small">
-                  <i class="fas fa-times"></i>
-                </span>
-              </button>
-              
-          </div>
-
-          </li>
-        </ul>
-
+        </div>
     </div>
-    <div class="is-justify-content-right btt">
-      <p class="control">
-        <a href="teams/teamadd" class="button is-link">
-          Adicionar
-        </a>
-      </p>
-    </div>
-    </div>
-  </section>
+
 {{>partials/end}}
